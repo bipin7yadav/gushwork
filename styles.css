@@ -232,6 +232,14 @@ button {
     height: 80px;
 }
 
+.header__logo img {
+    height: 52px;
+    width: auto;
+    max-width: 240px;
+    object-fit: contain;
+    display: block;
+}
+
 .header__nav {
     display: flex;
     flex-grow: 1;
@@ -565,15 +573,48 @@ button {
 }
 
 .logos__item {
-    width: 150px;
-    padding: 0 var(--spacing-md);
+    width: 180px;
+    padding: 0 var(--spacing-lg);
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: grayscale(100%);
-    opacity: 0.6;
+    filter: grayscale(40%);
+    opacity: 0.85;
     transition: all var(--transition-fast);
+}
+
+.logos__item img {
+    width: 140px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.logos__item svg {
+    width: 160px;
+    height: 56px;
+}
+
+.logos__banner-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--spacing-xl);
+    filter: grayscale(40%);
+    opacity: 0.9;
+    transition: all var(--transition-fast);
+}
+
+.logos__banner-item img {
+    height: 56px;
+    width: auto;
+    max-width: 860px;
+    object-fit: contain;
+}
+
+.logos__banner-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .logos__item:hover {
@@ -582,15 +623,8 @@ button {
 }
 
 @keyframes scrollLogos {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-150px * 10));
-    }
-
-    /* Adjust based on elements */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 /* =========================================
@@ -1106,6 +1140,7 @@ button {
     gap: var(--spacing-sm);
     flex: 1 1 300px;
     width: 100%;
+    align-items: stretch;
 }
 
 .faq__catalogue-form input {
@@ -1121,6 +1156,11 @@ button {
 .faq__catalogue-form input:focus {
     outline: none;
     border-color: var(--color-primary);
+}
+
+.faq__catalogue-form .btn {
+    white-space: nowrap;
+    padding: 0.75rem 1.5rem;
 }
 
 /* =========================================
@@ -1563,6 +1603,10 @@ button {
 @media (max-width: 1199px) {
 
     /* Under 1200px */
+    .container {
+        padding: 0 3rem;
+    }
+
     .hero__carousel {
         padding: var(--spacing-sm);
     }
@@ -1570,6 +1614,10 @@ button {
 
 /* Tablet */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
     .hero__container {
         flex-direction: column;
     }
@@ -1610,6 +1658,7 @@ button {
 
     .faq__catalogue-form {
         max-width: 500px;
+        align-items: center;
     }
 
     .header__nav {
