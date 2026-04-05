@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64">
+  <!-- Pipe icon: two horizontal pipes with flow arrow -->
+  <g>
+    <!-- Top pipe -->
+    <rect x="4"  y="10" width="48" height="16" rx="8" fill="#1E3A8A"/>
+    <!-- Top pipe highlight -->
+    <rect x="4"  y="12" width="48" height="5"  rx="4" fill="rgba(255,255,255,0.18)"/>
+    <!-- Bottom pipe -->
+    <rect x="4"  y="38" width="48" height="16" rx="8" fill="#1E3A8A"/>
+    <!-- Bottom pipe highlight -->
+    <rect x="4"  y="40" width="48" height="5"  rx="4" fill="rgba(255,255,255,0.18)"/>
+    <!-- Flow arrow -->
+    <polygon points="42,30 54,24 54,40" fill="#2563EB"/>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="66" y1="10" x2="66" y2="54" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Company name -->
+  <text x="78" y="30"
+        font-family="'Arial Black', Arial, sans-serif"
+        font-weight="900"
+        font-size="22"
+        letter-spacing="1"
+        fill="#1E3A8A">MANGALAM</text>
+
+  <!-- Tagline -->
+  <text x="80" y="48"
+        font-family="Arial, sans-serif"
+        font-weight="500"
+        font-size="11"
+        letter-spacing="2.5"
+        fill="#64748B">HDPE PIPES &amp; COILS</text>
+</svg>
